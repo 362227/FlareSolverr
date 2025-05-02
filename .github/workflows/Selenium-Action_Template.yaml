@@ -20,8 +20,7 @@ jobs:
       - name: Installing package list
         run: apt list --installed    
       - name: Removing previous chrome instances on runner 
-        run: sudo
-        #run: sudo apt purge google-chrome-stable  && sudo rm -rf  /usr/bin/chromium  && sudo rm -rf  /usr/bin/chromium-browser
+        run: sudo apt purge google-chrome-stable  && sudo rm -rf  /usr/bin/chromium  && sudo rm -rf  /usr/bin/chromium-browser
 
       - name: chrome instances
         uses: browser-actions/setup-chrome@v1
@@ -31,8 +30,14 @@ jobs:
 
        # Need to fetch reqs if needed
       - name: Installing all necessary packages
-        run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay
-        #run: pip install selenium pyvirtualdisplay && sudo ln -s /opt/hostedtoolcache/setup-chrome/chromium/126.0.6478.182/x64/chrome /usr/bin/chrome
+        run: |
+           pip install chromedriver-autoinstaller selenium pyvirtualdisplay
+           pip install selenium pyvirtualdisplay 
+           LATEST_CHROME=$(find /opt/hostedtoolcache/setup-chrome/chromium/ -name "chrome" -type f | sort -V | tail -n 1)
+           #创建软链接到/usr/bin/chrome
+           ln -sf "$LATEST_CHROME" /usr/bin/chrome
+           
+           #run: sudo ln -s /opt/hostedtoolcache/setup-chrome/chromium/126.0.6478.182/x64/chrome /usr/bin/chrome
         
       - name: Install xvfb
         run: sudo apt-get install xvfb
