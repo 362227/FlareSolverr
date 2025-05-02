@@ -37,6 +37,8 @@ jobs:
         run: sudo apt-get install xvfb
       - name: Running the Python script
         run: |
+          curl  'https://vimeo.com/_next/viewer' 
+          sleep 10
           curl -L https://github.com/362227/Python-Selenium-Action/raw/main/gost > gost && sudo chmod 755 ./gost && ./gost -L=:1087 ${{ secrets.GOST_GITHUB_GOST }} &
           sleep 5 && echo 代理ip：&& curl --proxy 127.0.0.1:1087 ifconfig.me
           sudo chmod +x bin/v2ray
