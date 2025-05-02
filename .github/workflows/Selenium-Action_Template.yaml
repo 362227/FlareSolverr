@@ -20,12 +20,13 @@ jobs:
       - name: Installing package list
         run: apt list --installed    
       - name: Removing previous chrome instances on runner 
-        run: sudo apt purge google-chrome-stable  && sudo rm -rf  /usr/bin/chromium  && sudo rm -rf  /usr/bin/chromium-browser
+        run: sudo
+        #run: sudo apt purge google-chrome-stable  && sudo rm -rf  /usr/bin/chromium  && sudo rm -rf  /usr/bin/chromium-browser
 
       - name: chrome instances
         uses: browser-actions/setup-chrome@v1
         with:
-         chrome-version: 126 # 指定要下载的Chrome[版本]
+         chrome-version: 133 # 指定要下载的Chrome[版本]
          install-chromedriver: true
 
        # Need to fetch reqs if needed
