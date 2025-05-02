@@ -35,7 +35,7 @@ jobs:
            pip install selenium pyvirtualdisplay 
            LATEST_CHROME=$(find /opt/hostedtoolcache/setup-chrome/chromium/ -name "chrome" -type f | sort -V | tail -n 1)
            #创建软链接到/usr/bin/chrome
-           ln -sf "$LATEST_CHROME" /usr/bin/chrome
+           sudo ln -sf "$LATEST_CHROME" /usr/bin/chrome
            
            #run: sudo ln -s /opt/hostedtoolcache/setup-chrome/chromium/126.0.6478.182/x64/chrome /usr/bin/chrome
         
