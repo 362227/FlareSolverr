@@ -52,6 +52,7 @@ jobs:
           sleep 34
           sudo git clone https://github.com/FlareSolverr/FlareSolverr && cd FlareSolverr && sudo pip install -r requirements.txt && sudo python src/flaresolverr.py &
           python Selenium-Template.py https://vimeo.com/_next/viewer  > vimeo.html
+           python Selenium-Template.py https://www.santiago-gonzalez.com/music-videos  > santiago-gonzalez.html
           #抓supjav
           #python Selenium-Template.py https://supjav.com/ja/category/amateur > supjav.html
           #python Selenium-Template.py https://supjav.com/ja/category/amateur/page/2 >> supjav.html
