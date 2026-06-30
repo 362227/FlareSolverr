@@ -1,2 +1,1969 @@
 代理ip:
-<html><head><meta name="color-scheme" content="light dark"><meta charset="utf-8"></head><body><pre>{"success":false,"error":"Internal Server Error","message":"服务器内部错误，请稍后再试！"}</pre><div class="json-formatter-container"></div></body></html>
+<html lang="zh-cn"><head>
+  
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords" content="SubHD, SubHDTW, 字幕, 字幕下载, 电影字幕, 中文字幕, 电影字幕下载, 中文字幕下载, 字幕组, 射手网, 美剧字幕下载, 英剧字幕下载, 双语字幕下载, 美剧, 电影, 美剧下载, 英剧下载, 电影下载, 美剧字幕, 英剧字幕">
+  <meta name="description" content="Sub HD为影视爱好者们提供交流字幕的平台，你可以在这里找到并下载字幕，对字幕打分和评论，也可以上传字幕与大家分享">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicon-16x16.png">
+  <link rel="icon" href="/public/images/favicon.ico">
+  <title>最新字幕 分享交流下载字幕平台 - SubHD</title>
+  <link href="/public/bs/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/public/css/subhd2.css">
+  <link rel="stylesheet" href="/public/css/subhd3.css">
+  <script src="/public/jquery-3.7.1.min.js"></script>
+  <script src="/public/bs/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="shadow-sm clearfix p-1 bg-dark">
+    <div class="container">
+      <div class="float-start text-light f12">
+        <div class="pt-1"><span style="margin-right:100px">网站可能被墙，请记住以下域名：<span class="text-danger fw-bold f14">subhd.me subhd.one</span></span></div>
+      </div>
+      <div class="float-end">
+        <table>
+          <tbody><tr>
+            <td>
+              <a class="link-light pe-2" href="/set/login">登录</a>
+            </td>
+            <td>
+              <a class="link-light" href="/set/reg">注册</a>
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-image: linear-gradient(-45deg,#0443a2,#009bde);background-position: center;">
+    <div class="container">
+      <a class="navbar-brand f24 fw-light" href="/">SubHD</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="input-group search">
+          <input class="form-control" id="sn" name="subhd_search" type="search" autocomplete="new-password" data-lpignore="true" data-1p-ignore="true" data-bwignore="true" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="影视名称" aria-label="Search" value="">
+          <button class="btn btn-outline-light rounded-end" id="searchbutton" type="button">搜索</button>
+          <div class="dropdown-menu dropdown-menu-search2 f12 mt-5"></div>
+        </div>
+        <ul class="navbar-nav ms-3 mb-2 mb-lg-0 f14">
+          <li class="nav-item"><a class="nav-link active" href="/sub/new">字幕</a></li>
+          <li class="nav-item"><a class="nav-link " href="/sub/tv">剧集</a></li>
+          <li class="nav-item"><a class="nav-link " href="/sub/movie">电影</a></li>
+          <li class="nav-item"><a class="nav-link " href="/search/2160">2160p</a></li>
+          <li class="nav-item"><a class="nav-link " href="/forum/forum">论坛</a></li>
+          <li class="nav-item"><a class="nav-link " href="/upload">上传</a></li>
+          <li class="nav-item"><a class="nav-link " href="/zu">字幕组</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#wangzhi">网址</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://t.me/+wNZD6i-nGH02NjZl" target="_blank">电报群</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="row">
+        <div class="col-lg-9 pe-lg-4">
+          <div class="py-4 d-flex justify-content-between align-items-center gap-2">
+            <div class="btn-group">
+              <a class="btn btn-sm btn-danger" href="/sub/new" role="button">最新字幕</a>
+              <a class="btn btn-sm btn-light" href="/sub/tv" role="button">剧集字幕</a>
+              <a class="btn btn-sm btn-light" href="/sub/movie" role="button">电影字幕</a>
+              <a class="btn btn-sm btn-light" href="/sub/top" role="button">热门字幕</a>
+              <a class="btn btn-sm btn-light" href="/sub/toptv" role="button">热门剧集</a>
+              <a class="btn btn-sm btn-light" href="/sub/topmv" role="button">热门电影</a>
+            </div>
+            
+              <div class="text-secondary f12 text-nowrap">第 1 页</div>
+            
+          </div>
+
+          
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/1301811">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/1301811_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/58LcaQ">鳄鱼波鞋走天涯</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/58LcaQ" class="link-dark">
+              The.Cure.1995.1080p.BluRay.x264.FLAC.2.0-HANDJOB.chs&amp;eng
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#6f42c1!important">转载精修</span>
+            <span class="p-1 fw-bold">双语</span>
+            <span class="p-1 fw-bold">英语</span><span class="p-1 fw-bold">简体</span>
+            <span class="p-1 text-secondary">ASS</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">137k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">6</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T13:39:00.000Z" data-local-time="relative">13:39</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/SubKing" target="_blank">SubKing</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/1428096">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/1428096_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/MWVLvn">都市浪人</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/MWVLvn" class="link-dark">
+              Slacker (1990) (01:40:12)
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#28a745!important">原创翻译</span>
+            
+            <span class="p-1 fw-bold">繁体</span>
+            <span class="p-1 text-secondary">SRT</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">109k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">3</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T13:01:04.000Z" data-local-time="relative">13:01</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/Kaput" target="_blank">Kaput</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/1301550">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/1301550_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/31ZKIW">月光光心慌慌2</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/31ZKIW" class="link-dark">
+              月光光心慌慌2.Halloween.II.1981简中精校字幕
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#6f42c1!important">转载精修</span>
+            
+            <span class="p-1 fw-bold">简体</span>
+            <span class="p-1 text-secondary">ASS</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">65k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">9</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T12:14:00.000Z" data-local-time="relative">12:14</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/SubKing" target="_blank">SubKing</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/27041235">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/27041235_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/YjzypE">初代吸血鬼 第五季</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/YjzypE" class="link-dark">
+              初代吸血鬼.第五季.The.Originals.S05.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTG
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white bg-black">AI翻润色</span>
+            <span class="p-1 fw-bold">双语</span>
+            <span class="p-1 fw-bold">简体</span><span class="p-1 fw-bold">英语</span>
+            <span class="p-1 text-secondary">ASS</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">366k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">0</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T12:08:51.000Z" data-local-time="relative">12:08</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/caeser2" target="_blank">caeser2</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/26749114">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/26749114_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/RHQhZe">初代吸血鬼 第四季</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/RHQhZe" class="link-dark">
+              初代吸血鬼.第四季.The.Originals.S04.1080p.BluRay.x264-SHORTBREHD
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white bg-black">AI翻润色</span>
+            <span class="p-1 fw-bold">双语</span>
+            <span class="p-1 fw-bold">简体</span><span class="p-1 fw-bold">英语</span>
+            <span class="p-1 text-secondary">ASS</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">368k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">0</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T11:59:01.000Z" data-local-time="relative">11:59</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/caeser2" target="_blank">caeser2</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/36956594">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/36956594_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/s6KYH8">穿普拉达的女王2</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/s6KYH8" class="link-dark">
+              The Devil Wears Prada 2  2026.2160p.iTunes.WEB-DL.DDP.7.1.Atmos.HDR10+.H.265-Pluto-中英字幕
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#6f42c1!important">转载精修</span>
+            <span class="p-1 fw-bold">双语</span>
+            <span class="p-1 fw-bold">简体</span><span class="p-1 fw-bold">英语</span>
+            <span class="p-1 text-secondary">ASS</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">1197k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">170</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T11:54:02.000Z" data-local-time="relative">11:54</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/jokerrrrrrr" target="_blank">jokerrrrrrr</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/36956594">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/36956594_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/eVABX6">穿普拉达的女王2</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/eVABX6" class="link-dark">
+              穿普拉达的女王2.The.Devil.Wears.Prada.2.2026.官方简繁英粵
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#00a3ff!important">官方字幕</span>
+            
+            <span class="p-1 fw-bold">简体</span><span class="p-1 fw-bold">繁体</span><span class="p-1 fw-bold">英语</span>
+            <span class="p-1 text-secondary">SRT</span>
+            <span class="p-1 text-primary"><svg class="bi bi-chat align-baseline me-1" xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" viewBox="0 0 16 16"><path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"></path></svg>2</span>
+            
+              <span class="p-1 text-danger">
+                <svg class="align-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14px" height="14px" fill="currentColor"><path d="M3,11h3v10H3V11z M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11v10h10.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z"></path></svg>
+                <span class="align-baseline">1</span>
+              </span>
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">155k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">363</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T11:31:15.000Z" data-local-time="relative">11:31</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/kakushou" target="_blank">kakushou</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/37126195">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/37126195_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/qTbkY3">梦魇绝镇 第四季</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/qTbkY3" class="link-dark">
+              梦魇绝镇.From.S04E10.If.A.Tree.Falls.In.The.Forest.1080p.AMZN.WEB-DL.DDP5.1.H.264-NTb
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#00a3ff!important">官方字幕</span>
+            <span class="p-1 fw-bold">双语</span>
+            <span class="p-1 fw-bold">简体</span><span class="p-1 fw-bold">繁体</span><span class="p-1 fw-bold">英语</span>
+            <span class="p-1 text-secondary">SRT</span><span class="p-1 text-secondary">ASS</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">164k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">6</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T11:22:28.000Z" data-local-time="relative">11:22</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/风吹来的那片云" target="_blank">风吹来的那片云</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/4092781">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/4092781_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/n0XLZq">无可奈何</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/n0XLZq" class="link-dark">
+              港繁 | 어쩔수가없다 (2025)
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#00a3ff!important">官方字幕</span>
+            
+            <span class="p-1 fw-bold">繁体</span>
+            <span class="p-1 text-secondary">SRT</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">31k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">6</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T11:06:54.000Z" data-local-time="relative">11:06</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/Coritz" target="_blank">Coritz</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/2137339">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/2137339_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/4tTe9O">风流江湖客</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/4tTe9O" class="link-dark">
+              匹配时长：1:38:53，风流江湖客.Bedtime.Story.1964.BluRay.chs
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white bg-black">AI翻润色</span>
+            
+            <span class="p-1 fw-bold">简体</span>
+            <span class="p-1 text-secondary">SRT</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">122k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">0</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T10:57:03.000Z" data-local-time="relative">10:57</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/richardsxie" target="_blank">richardsxie</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/1297670">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/1297670_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/oPI08l">致命罗密欧</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/oPI08l" class="link-dark">
+              致命罗密欧.Romeo.Must.Die.2000.BluRay.[1:55:04]
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#6f42c1!important">转载精修</span>
+            <span class="p-1 fw-bold">双语</span>
+            <span class="p-1 fw-bold">简体</span><span class="p-1 fw-bold">英语</span>
+            <span class="p-1 text-secondary">ASS</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">107k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">0</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T10:33:37.000Z" data-local-time="relative">10:33</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/woonew" target="_blank">woonew</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/3317356">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/3317356_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/8g5ESR">但丁之手</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/8g5ESR" class="link-dark">
+              In.the.Hand.of.Dante.2025.1080p.WEB.h264-ETHEL.Cht&amp;Eng
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#00a3ff!important">官方字幕</span>
+            <span class="p-1 fw-bold">双语</span>
+            <span class="p-1 fw-bold">繁体</span><span class="p-1 fw-bold">英语</span>
+            <span class="p-1 text-secondary">ASS</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">216k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">3</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T10:16:27.000Z" data-local-time="relative">10:16</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/fpakui" target="_blank">fpakui</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/36956594">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/36956594_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/UKflYL">穿普拉达的女王2</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/UKflYL" class="link-dark">
+              The.Devil.Wears.Prada.2.2026.1080p.AMZN.WEB-DL.DDP5.1.H.264-KyoGo.Cht&amp;Eng
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#00a3ff!important">官方字幕</span>
+            <span class="p-1 fw-bold">双语</span>
+            <span class="p-1 fw-bold">繁体</span>
+            <span class="p-1 text-secondary">ASS</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">268k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">221</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T10:16:21.000Z" data-local-time="relative">10:16</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/fpakui" target="_blank">fpakui</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/37450627">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/37450627_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/Dcx7UP">痴迷</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/Dcx7UP" class="link-dark">
+              痴迷.Obsession.2025.eng
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#6f42c1!important">转载精修</span>
+            
+            <span class="p-1 fw-bold">英语</span>
+            <span class="p-1 text-secondary">SRT</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">114k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">20</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T10:08:00.000Z" data-local-time="relative">10:08</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/SubKing" target="_blank">SubKing</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/37450627">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/37450627_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/cEDOCu">痴迷</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/cEDOCu" class="link-dark">
+              痴迷.Obsession.2025.简繁英
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#6f42c1!important">转载精修</span>
+            
+            <span class="p-1 fw-bold">简体</span><span class="p-1 fw-bold">繁体</span><span class="p-1 fw-bold">英语</span>
+            <span class="p-1 text-secondary">SRT</span>
+            <span class="p-1 text-primary"><svg class="bi bi-chat align-baseline me-1" xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" viewBox="0 0 16 16"><path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"></path></svg>1</span>
+            
+              <span class="p-1 text-danger">
+                <svg class="align-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14px" height="14px" fill="currentColor"><path d="M3,11h3v10H3V11z M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11v10h10.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z"></path></svg>
+                <span class="align-baseline">1</span>
+              </span>
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">63k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">725</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T10:05:50.000Z" data-local-time="relative">10:05</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/kakushou" target="_blank">kakushou</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/37450627">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/37450627_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/yIOVMr">痴迷</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/yIOVMr" class="link-dark">
+              Obsession 2026 1080p AMZN WEB-DL-Ben The Men-中英字幕
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#6f42c1!important">转载精修</span>
+            <span class="p-1 fw-bold">双语</span>
+            <span class="p-1 fw-bold">简体</span><span class="p-1 fw-bold">英语</span>
+            <span class="p-1 text-secondary">ASS</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">1108k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">553</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T09:57:14.000Z" data-local-time="relative">09:57</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/jokerrrrrrr" target="_blank">jokerrrrrrr</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/37450627">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/37450627_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/AekuYs">痴迷</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/AekuYs" class="link-dark">
+              痴迷.Obsession.2026.1080p.AMZN.WEB-DL.DDP5.1.H.264
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#6f42c1!important">转载精修</span>
+            
+            <span class="p-1 fw-bold">简体</span>
+            <span class="p-1 text-secondary">SRT</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">113k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">179</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T09:40:32.000Z" data-local-time="relative">09:40</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/大自然的搬运工" target="_blank">大自然的搬运工</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/37925538">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/37925538_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/8g5EtR">囚徒之弈</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/8g5EtR" class="link-dark">
+              囚徒之弈 Pojedynek (2026) [1080p] [WEBRip]【Deepseek】
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white bg-black">AI翻润色</span>
+            
+            <span class="p-1 fw-bold">简体</span>
+            <span class="p-1 text-secondary">SRT</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">72k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">3</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T09:34:48.000Z" data-local-time="relative">09:34</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/沐夜流星" target="_blank">沐夜流星</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <a href="/d/37450627">
+          <div class="pics">
+            <img class="rounded-start" src="https://img.subhd.me/poster/douban/37450627_600.webp">
+          </div>
+        </a>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-dark align-middle" href="/a/6XsBjg">痴迷</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/6XsBjg" class="link-dark">
+              痴迷.Obsession.2026.1080p.WEB-DL.DDP5.1.H.264-NONONONO
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white" style="background-color:#28a745!important">原创翻译</span>
+            <span class="p-1 fw-bold">双语</span>
+            <span class="p-1 fw-bold">简体</span><span class="p-1 fw-bold">英语</span>
+            <span class="p-1 text-secondary">ASS</span>
+            <span class="p-1 text-primary"><svg class="bi bi-chat align-baseline me-1" xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" viewBox="0 0 16 16"><path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"></path></svg>4</span>
+            
+              <span class="p-1 text-danger">
+                <svg class="align-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14px" height="14px" fill="currentColor"><path d="M3,11h3v10H3V11z M18.77,11h-4.23l1.52-4.94C16.38,5.03,15.54,4,14.38,4c-0.58,0-1.14,0.24-1.52,0.65L7,11v10h10.43 c1.06,0,1.98-0.67,2.19-1.61l1.34-6C21.23,12.15,20.18,11,18.77,11z"></path></svg>
+                <span class="align-baseline">2</span>
+              </span>
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">183k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">502</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T09:24:17.000Z" data-local-time="relative">09:24</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/Balding" target="_blank">Balding</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+              <div class="bg-white shadow-sm rounded-3 mb-4">
+  <div class="row">
+    <div class="col-2 d-none d-lg-block">
+      
+        <div class="pics">
+          <img class="rounded-start w-100" src="https://img.subhd.me/files/movie-default.gif">
+        </div>
+      
+    </div>
+    <div class="col-lg-10">
+      <div class="pt-3 pe-3 pb-2 ps-3 ps-lg-0 position-relative">
+        <div class="clearfix">
+          <div class="float-start f16 fw-bold">
+            
+              <a class="link-secondary" href="/a/hfuraB">未关联</a>
+            
+          </div>
+          
+          <div class="view-text text-secondary">
+            <a href="/a/hfuraB" class="link-dark">
+              Dos.Manzanas.2023.1080p.WEBRip.x264.AAC【DeepSeek 台灣用語】
+            </a>
+          </div>
+          <div class="text-truncate py-2 f11">
+            <span class="rounded p-1 me-1 text-white bg-black">AI翻润色</span>
+            
+            <span class="p-1 fw-bold">繁体</span>
+            <span class="p-1 text-secondary">SRT</span>
+            
+            
+          </div>
+          <div class="pt-2 text-secondary f12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+              <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"></path>
+            </svg>
+            <span class="align-text-top me-3">54k</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"></path>
+            </svg>
+            <span class="align-text-top me-3">3</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+            </svg>
+            <span class="align-text-top me-3"><time datetime="2026-06-30T09:06:19.000Z" data-local-time="relative">09:06</time></span>
+          </div>
+          <div class="pt-1 f12 text-secondary">
+            发布人 <a class="fw-bold text-dark" href="/u/cooee" target="_blank">cooee</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+          
+
+          
+            <nav class="clearfix mb-5"><ul class="pagination justify-content-center"><li class="page-item disabled"><span class="page-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16"><path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"></path></svg></span></li><li class="page-item active"><a class="page-link" href="/sub/new/1">1</a></li><li class="page-item"><a class="page-link" href="/sub/new/2">2</a></li><li class="page-item"><a class="page-link" href="/sub/new/3">3</a></li><li class="page-item"><a class="page-link" href="/sub/new/4">4</a></li><li class="page-item"><a class="page-link" href="/sub/new/5">5</a></li><li class="page-item"><a class="page-link" href="/sub/new/6">6</a></li><li class="page-item"><a class="page-link" href="/sub/new/2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16"><path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"></path></svg></a></li></ul></nav>
+          
+        </div>
+        <div class="col-lg-3 pt-5">
+          
+            <div class="mb-3 fw-bold">IMDb 热门电影</div>
+<div class="bg-white mb-3 rounded">
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36918069"><span class="text-secondary">1</span> 绵羊侦探团<br>
+    <span class="text-secondary">The Sheep Detectives</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36225840"><span class="text-secondary">2</span> 超级少女<br>
+    <span class="text-secondary">Supergirl</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37450627"><span class="text-secondary">3</span> 痴迷<br>
+    <span class="text-secondary">Obsession</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/33455977"><span class="text-secondary">4</span> 真爱留声<br>
+    <span class="text-secondary">Voicemails for Isabelle</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37192135"><span class="text-secondary">5</span> 公民义警<br>
+    <span class="text-secondary">Citizen Vigilante</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36238849"><span class="text-secondary">6</span> 玩具总动员5<br>
+    <span class="text-secondary">Toy Story 5</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36860212"><span class="text-secondary">7</span> 揭秘日<br>
+    <span class="text-secondary">Disclosure Day</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37437456"><span class="text-secondary">8</span> 人生大弟震<br>
+    <span class="text-secondary">Little Brother</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36235977"><span class="text-secondary">9</span> 后室<br>
+    <span class="text-secondary">Backrooms</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/1951286"><span class="text-secondary">10</span> 宇宙巨人：希曼崛起<br>
+    <span class="text-secondary">Masters of the Universe</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/5348089"><span class="text-secondary">11</span> 阿凡达：火与烬<br>
+    <span class="text-secondary">Avatar: Fire and Ash</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/35010610"><span class="text-secondary">12</span> 挽救计划<br>
+    <span class="text-secondary">Project Hail Mary</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/35948919"><span class="text-secondary">13</span> 迈克尔·杰克逊：巨星之路<br>
+    <span class="text-secondary">Michael</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36808876"><span class="text-secondary">14</span> 奥德赛<br>
+    <span class="text-secondary">The Odyssey</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36246195"><span class="text-secondary">15</span> 蜘蛛侠：崭新之日<br>
+    <span class="text-secondary">Spider-Man: Brand New Day</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37006052"><span class="text-secondary">16</span> 调音师<br>
+    <span class="text-secondary">Tuner</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/3317356"><span class="text-secondary">17</span> 但丁之手<br>
+    <span class="text-secondary">In the Hand of Dante</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36850766"><span class="text-secondary">18</span> 惊声尖笑6<br>
+    <span class="text-secondary">Scary Movie</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36877558"><span class="text-secondary">19</span> 罗宾汉之死<br>
+    <span class="text-secondary">The Death of Robin Hood</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36916000"><span class="text-secondary">20</span> 诺曼底72小时<br>
+    <span class="text-secondary">Pressure</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36188176"><span class="text-secondary">21</span> 超人<br>
+    <span class="text-secondary">Superman</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36919251"><span class="text-secondary">22</span> 巫法闯情关2<br>
+    <span class="text-secondary">Practical Magic 2</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36777886"><span class="text-secondary">23</span> 团战之夜<br>
+    <span class="text-secondary">Good Luck, Have Fun, Don't Die</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37559942"><span class="text-secondary">24</span> 利未记<br>
+    <span class="text-secondary">Leviticus</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36962219"><span class="text-secondary">25</span> 小黄人与大怪兽<br>
+    <span class="text-secondary">Minions &amp; Monsters</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/26900149"><span class="text-secondary">26</span> 如何大赚一笔<br>
+    <span class="text-secondary">How to Make a Killing</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37250117"><span class="text-secondary">27</span> 暗流低语<br>
+    <span class="text-secondary">Undertone</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36926954"><span class="text-secondary">28</span> 杀的就是你<br>
+    <span class="text-secondary">They Will Kill You</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36877245"><span class="text-secondary">29</span> 火遮眼<br>
+    <span class="text-secondary">The Furious</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36723035"><span class="text-secondary">30</span> 星球大战：曼达洛人与古古<br>
+    <span class="text-secondary">Star Wars: The Mandalorian and Grogu</span></a>
+  </div>
+
+</div>
+
+<div class="mb-3 fw-bold">IMDb 热门剧集</div>
+<div class="bg-white mb-3 rounded">
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37133963"><span class="text-secondary">1</span> 我会找到你<br>
+    <span class="text-secondary">I Will Find You</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36666949"><span class="text-secondary">2</span> 龙之家族 第三季<br>
+    <span class="text-secondary">House of the Dragon</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37415674"><span class="text-secondary">3</span> 熊家餐馆 第五季<br>
+    <span class="text-secondary">The Bear</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37126195"><span class="text-secondary">4</span> 梦魇绝镇 第四季<br>
+    <span class="text-secondary">From</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37032135"><span class="text-secondary">5</span> 寡妇湾 第一季<br>
+    <span class="text-secondary">Widow's Bay</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36800343"><span class="text-secondary">6</span> 降世神通：最后的气宗 第二季<br>
+    <span class="text-secondary">Avatar: The Last Airbender</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37028528"><span class="text-secondary">7</span> 达顿牧场 第一季<br>
+    <span class="text-secondary">Dutton Ranch</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37061179"><span class="text-secondary">8</span> 校园之外 第一季<br>
+    <span class="text-secondary">Off Campus</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36657472"><span class="text-secondary">9</span> 恐怖角<br>
+    <span class="text-secondary">Cape Fear</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37143222"><span class="text-secondary">10</span> 传奇办公室：中央情报 第二季<br>
+    <span class="text-secondary">The Agency</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/26584183"><span class="text-secondary">11</span> 权力的游戏 第八季<br>
+    <span class="text-secondary">Game of Thrones</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37430807"><span class="text-secondary">12</span> 生活、拉里与不快乐的追求：一部美国史<br>
+    <span class="text-secondary">Life, Larry and the Pursuit of Unhappiness: an Almost History of America</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37806463"><span class="text-secondary">13</span> Oasis：绿洲谜踪<br>
+    <span class="text-secondary">Oasis</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36240199"><span class="text-secondary">14</span> 暗影蜘蛛侠<br>
+    <span class="text-secondary">Spider-Noir</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36851140"><span class="text-secondary">15</span> 谜探休格 第二季<br>
+    <span class="text-secondary">Sugar</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36343491"><span class="text-secondary">16</span> 黑袍纠察队 第五季<br>
+    <span class="text-secondary">The Boys</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/35213072"><span class="text-secondary">17</span> Re：从零开始的异世界生活 第二季 Part.2<br>
+    <span class="text-secondary">Re: Zero - Starting Life in Another World</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36370261"><span class="text-secondary">18</span> 怪奇退休镇 第一季<br>
+    <span class="text-secondary">The Boroughs</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/6952149"><span class="text-secondary">19</span> 绝命毒师  第五季<br>
+    <span class="text-secondary">Breaking Bad</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36936154"><span class="text-secondary">20</span> 吸血鬼莱斯特<br>
+    <span class="text-secondary">The Vampire Lestat</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37523009"><span class="text-secondary">21</span> 金特务：本色回归<br>
+    <span class="text-secondary">Agent Kim Reactivated</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36508123"><span class="text-secondary">22</span> 瑞克和莫蒂 第九季<br>
+    <span class="text-secondary">Rick and Morty</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37071123"><span class="text-secondary">23</span> 铁拳教育<br>
+    <span class="text-secondary">Teach You a Lesson</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/35758798"><span class="text-secondary">24</span> 亢奋 第三季<br>
+    <span class="text-secondary">Euphoria</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37249356"><span class="text-secondary">25</span> 最后一排的男孩<br>
+    <span class="text-secondary">Notes from the Last Row</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/37239408"><span class="text-secondary">26</span> 匹兹堡医护前线 第二季<br>
+    <span class="text-secondary">The Pitt</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36845423"><span class="text-secondary">27</span> 曼哈顿打拼日记<br>
+    <span class="text-secondary">Not Suitable for Work</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36987600"><span class="text-secondary">28</span> 每个夏天之后<br>
+    <span class="text-secondary">Every Year After</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/36857449"><span class="text-secondary">29</span> 末日地堡 第三季<br>
+    <span class="text-secondary">Silo</span></a>
+  </div>
+
+  <div class="row g-0 py-2 px-3 border-bottom" style="--bs-border-opacity: .5;">
+    <a class="link-dark" target="_blank" href="/d/38352051"><span class="text-secondary">30</span> 菜鸟老警 第九季<br>
+    <span class="text-secondary">The Rookie</span></a>
+  </div>
+
+</div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script>
+    (function () {
+      var expectedSearchValue = "";
+      if (expectedSearchValue) return;
+      var userTouchedSearch = false;
+
+      function markSearchTouched() {
+        userTouchedSearch = true;
+      }
+
+      function clearEmailAutofillFromSearch() {
+        var searchInput = document.getElementById("sn");
+        if (!searchInput || userTouchedSearch) return;
+        if (/@/.test(searchInput.value)) searchInput.value = "";
+      }
+
+      var searchInput = document.getElementById("sn");
+      if (searchInput) {
+        searchInput.addEventListener("keydown", markSearchTouched);
+        searchInput.addEventListener("paste", markSearchTouched);
+        searchInput.addEventListener("compositionstart", markSearchTouched);
+      }
+
+      clearEmailAutofillFromSearch();
+      window.addEventListener("pageshow", clearEmailAutofillFromSearch);
+      var checks = 0;
+      var timer = window.setInterval(function () {
+        checks += 1;
+        clearEmailAutofillFromSearch();
+        if (checks >= 20 || userTouchedSearch) window.clearInterval(timer);
+      }, 250);
+    })();
+  </script>
+
+  <script>
+    (function () {
+      function debounce(func, wait) {
+        var timeout;
+        return function () {
+          var context = this;
+          var args = arguments;
+          window.clearTimeout(timeout);
+          timeout = window.setTimeout(function () {
+            func.apply(context, args);
+          }, wait);
+        };
+      }
+
+      function searchValue() {
+        return $.trim($("#sn").val());
+      }
+
+      function goSearch() {
+        var text = encodeURIComponent(searchValue()).replace(/'/g, "%27");
+        if (text === "") {
+          alert("请填写内容");
+          return;
+        }
+        $("#searchbutton").text("搜索中....");
+        $("#searchbutton").attr("disabled", "disabled");
+        window.location.href = "/search/" + text;
+      }
+
+      $("#searchbutton").on("click", goSearch);
+      $("#sn").on("keypress", function (event) {
+        if (event.keyCode === 13) goSearch();
+      });
+
+      $("#sn").on("keyup", debounce(async function () {
+        var con = searchValue();
+        var menu = $(".dropdown-menu-search2");
+
+        if (!con) {
+          menu.hide();
+          return;
+        }
+
+        try {
+          var response = await fetch("/searchD/" + encodeURIComponent(con), {
+            method: "GET",
+            cache: "no-cache"
+          });
+          if (!response.ok) throw new Error("Network error");
+
+          var data = await response.json();
+          if (data.success && data.text) {
+            menu.html(data.text).show();
+          } else {
+            menu.hide();
+          }
+        } catch (error) {
+          menu.hide();
+        }
+      }, 500));
+
+      $("#sn").on("blur", function () {
+        $(".dropdown-menu-search2").delay(100).hide(100);
+      });
+    })();
+  </script>
+
+  <script>
+    $(document).on("click", ".talk, .talkf", function () {
+      var button = $(this);
+      var isForumTalk = button.hasClass("talkf");
+      var send = {
+        content: button.parent().parent().find("textarea").val(),
+        u_id: button.attr("u_ID"),
+        u_id2: button.attr("u_ID2"),
+        u_id3: button.attr("u_ID3"),
+        t_id: button.attr("t_id")
+      };
+
+      if (isForumTalk) {
+        send.ak_ID = button.attr("f_ID");
+      } else {
+        send.s_ID = button.attr("sub_ID");
+      }
+
+      $.ajax({
+        type: "GET",
+        url: isForumTalk ? "/api/forum/forumTalkPost" : "/api/forum/talkPost",
+        cache: true,
+        dataType: "json",
+        data: send,
+        beforeSend: function () {
+          button.text("提交中");
+          button.attr("disabled", "disabled");
+        },
+        success: function (data) {
+          if (data.success === true) {
+            window.location.reload();
+            button.text("页面刷新中");
+          } else {
+            alert(data.msg);
+            button.text("提交");
+            button.removeAttr("disabled");
+          }
+        },
+        error: function () {
+          alert("系统错误，请稍后再试");
+          button.text("提交");
+          button.removeAttr("disabled");
+        }
+      });
+    });
+
+    $(document).on("click", ".t1", function () {
+      $(this).parent().parent().parent().find(".bc1").show();
+    });
+
+    $(document).on("click", ".t2", function () {
+      var name = $(this).parent().parent().parent().find("a").first().text();
+      $(this).parent().parent().parent().find(".bc2").show();
+      $(this).parent().parent().parent().find("textarea").val("@" + name + "：");
+    });
+
+    $(document).on("click", ".thumb", function () {
+      var thumb = $(this);
+      var userId = thumb.attr("name");
+      var previousSele = thumb.attr("sele");
+      var previousValue = Number(thumb.find(".upv").text()) || 0;
+
+      if (userId == 0) {
+        alert("请登录后给这条字幕点赞");
+        return;
+      }
+
+      function setThumbState(sele, value) {
+        if (sele == 1) {
+          thumb.find(".up1").addClass("d-none").removeClass("d-inline");
+          thumb.find(".up2").addClass("d-inline").removeClass("d-none");
+        } else {
+          thumb.find(".up1").addClass("d-inline").removeClass("d-none");
+          thumb.find(".up2").addClass("d-none").removeClass("d-inline");
+        }
+        thumb.attr("sele", sele);
+        thumb.find(".upv").text(Math.max(value, 0));
+      }
+
+      if (previousSele == 2) {
+        setThumbState(1, previousValue + 1);
+      } else {
+        setThumbState(2, previousValue - 1);
+      }
+
+      $.ajax({
+        type: "GET",
+        url: "/api/sub/rating",
+        cache: true,
+        dataType: "json",
+        data: {
+          sid: $(".down").attr("sid"),
+          uid: userId,
+          sele: previousSele
+        },
+        success: function (data) {
+          if (data.success !== true) {
+            setThumbState(previousSele, previousValue);
+            alert(data.msg);
+          }
+        },
+        error: function () {
+          setThumbState(previousSele, previousValue);
+          alert("系统错误，请稍后再试");
+        }
+      });
+    });
+  </script>
+
+  <div class="bg-dark py-4 text-white clearfix">
+    <div class="container">
+      <div class="float-start">
+        <a href="/" class="link-light">SubHD</a>
+      </div>
+      <div class="float-end">
+        <a class="link-light mb-3" href="https://subhdtw.com" target="_blank">繁体</a> | <a class="link-light" href="mailto:subhdinfo@gmail.com">联系我们</a><span id="page-load-time" class="ms-2">| 加载 0.58s</span>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      function pad(value) {
+        return value < 10 ? "0" + value : String(value);
+      }
+
+      function sameDay(a, b) {
+        return a.getFullYear() === b.getFullYear() &&
+          a.getMonth() === b.getMonth() &&
+          a.getDate() === b.getDate();
+      }
+
+      function sameMonth(a, b) {
+        return a.getFullYear() === b.getFullYear() &&
+          a.getMonth() === b.getMonth();
+      }
+
+      function clock(date) {
+        return pad(date.getHours()) + ":" + pad(date.getMinutes());
+      }
+
+      function monthDayClock(date) {
+        return pad(date.getMonth() + 1) + "-" + pad(date.getDate()) + " " + clock(date);
+      }
+
+      function fullDateTime(date) {
+        return date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " + clock(date);
+      }
+
+      function chineseDateTime(date) {
+        return date.getFullYear() + "年" + (date.getMonth() + 1) + "月" + date.getDate() + "日 " + clock(date);
+      }
+
+      function formatLocalTime(date, mode) {
+        var now = new Date();
+        if (mode === "relative") {
+          if (sameDay(date, now)) return clock(date);
+          if (sameMonth(date, now)) return monthDayClock(date);
+          return fullDateTime(date);
+        }
+        if (mode === "forum-list") {
+          return sameDay(date, now) ? clock(date) : monthDayClock(date);
+        }
+        if (mode === "chinese") return chineseDateTime(date);
+        return fullDateTime(date);
+      }
+
+      var nodes = document.querySelectorAll("time[data-local-time]");
+      for (var i = 0; i < nodes.length; i += 1) {
+        var node = nodes[i];
+        var value = node.getAttribute("datetime");
+        if (!value) continue;
+        var date = new Date(value);
+        if (isNaN(date.getTime())) continue;
+        node.textContent = formatLocalTime(date, node.getAttribute("data-local-time"));
+      }
+    })();
+
+    window.addEventListener("load", function () {
+      window.setTimeout(function () {
+        var loadTime = 0;
+        if (window.performance && typeof window.performance.getEntriesByType === "function") {
+          var navigation = window.performance.getEntriesByType("navigation")[0];
+          if (navigation && navigation.duration) loadTime = navigation.duration;
+        }
+        if (!loadTime && window.performance && window.performance.timing) {
+          var timing = window.performance.timing;
+          if (timing.loadEventEnd && timing.navigationStart) {
+            loadTime = timing.loadEventEnd - timing.navigationStart;
+          }
+        }
+        var target = document.getElementById("page-load-time");
+        if (target && loadTime > 0) {
+          target.innerHTML = "| 加载 " + (loadTime / 1000).toFixed(2) + "s";
+        }
+      }, 0);
+    });
+  </script>
+  <div class="modal fade text-dark" id="wangzhi" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">可用网址</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        </button></div>
+        <div class="modal-body">
+          <div>目前可用网址：</div>
+          <div class="pt-3">
+            <div class="pt-1">
+              <a href="https://subhd.me" target="_blank">subhd.me</a>
+            </div>
+            <div class="pt-1">
+              <a href="https://subhdtw.com" target="_blank">subhdtw.com</a>
+            </div>
+            <div class="pt-1">
+              <a href="https://subhd.one" target="_blank">subhd.one</a>
+            </div>
+            <div class="pt-1">
+              <a href="https://subhd.top" target="_blank">subhd.top</a>
+            </div>
+            <div class="pt-1">
+              <a href="https://subhd.cc" target="_blank">subhd.cc</a>
+            </div>
+            <div class="pt-1">
+              <a href="https://subhd.tv" target="_blank">subhd.tv</a> (疑似被墙)
+            </div>
+            <div class="pt-1">
+              <a href="https://subhd.com" target="_blank">subhd.com</a> (疑似被墙)
+            </div>
+            <div class="pt-3">请收藏记录以备不时之需</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a13cd0eb6c45909c',t:'MTc4MjgxODc4Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;6c9e2e3fc40041f58633c184636edbe7&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+</body></html>
